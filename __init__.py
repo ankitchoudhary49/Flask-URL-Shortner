@@ -12,7 +12,7 @@ rand = ''
 app = Flask(__name__)
 app.config['SECRET_KEY']= 'TheMainFile'
 client = MongoClient("mongodb://ankitchoudhary49:ankitchoudhary49@ds115523.mlab.com:15523/py_url_shortener")
-db = client['url_shortner']
+db = client['py_url_shortener']
 users = db.users
 
 class LoginForm(FlaskForm):
